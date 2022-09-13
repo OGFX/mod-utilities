@@ -12,7 +12,8 @@ NAME = switchbox_1-2_st
 # --------------------------------------------------------------
 # Installation path
 
-INSTALL_PATH = /usr/local/lib/lv2
+PREFIX ?= /usr
+INSTALL_PATH = $(PREFIX)/lib/lv2
 COMPLETE_INSTALL_PATH = $(DESTDIR)$(INSTALL_PATH)/$(NAME).lv2
 
 # --------------------------------------------------------------
