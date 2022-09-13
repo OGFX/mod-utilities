@@ -20,7 +20,9 @@ ifeq ($(MOD),1)
 EFFECTS_DIR += HardwareBypass
 endif
 
-INSTALL_PATH = /usr/local/lib/lv2
+PREFIX ?= /usr
+
+INSTALL_PATH = $(PREFIX)/lib/lv2
 
 all:
 		@for fx in $(EFFECTS_DIR); do \
